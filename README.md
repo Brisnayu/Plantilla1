@@ -87,6 +87,7 @@ Crea o actualiza el archivo .eslintrc.json en la raíz de tu proyecto con la sig
 3. Configurar Prettier
 Crea un archivo prettier.config.js o .prettierrc o .prettierrc.json en la raíz de tu proyecto con la siguiente configuración:
 
+```sh
 {
   "tabWidth": 2,
   "useTabs": false,
@@ -99,19 +100,23 @@ Crea un archivo prettier.config.js o .prettierrc o .prettierrc.json en la raíz 
   "printWidth": 80,
   "endOfLine": "lf"
 }
+```
 
 4. Integrar ESLint y Prettier en Angular
 Si estás utilizando Angular CLI, puedes añadir un script en tu package.json para ejecutar ESLint:
 
+```sh
 "scripts": {
   "lint": "eslint 'src/**/*.{ts,js,html}'"
 }
+```
 
 5. Ejecutar ESLint
 Ejecuta el siguiente comando en la terminal para verificar que ESLint está configurado correctamente:
 
+```sh
 npm run lint
-
+```
 
 IMPORTANTE: En caso de errores se pueden formatear usando el comando: ng lint --fix
 
@@ -123,6 +128,7 @@ ESLint: ESLint Extension
 Prettier: Prettier Extension
 Luego, agrega la siguiente configuración en tu settings.json de VSCode:
 
+```sh
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -132,19 +138,21 @@ Luego, agrega la siguiente configuración en tu settings.json de VSCode:
   "eslint.format.enable": true,
   "eslint.packageManager": "npm"
 }
-
+```
 
 7. Ignorar archivos innecesarios
 Crea un archivo .eslintignore en la raíz de tu proyecto para ignorar archivos y directorios innecesarios:
 
+```sh
 node_modules/
 dist/
 *.js
 *.html
+```
 
 Y un archivo .prettierignore para Prettier:
 
+```sh
 /dist
 /node_modules
-
-
+```
