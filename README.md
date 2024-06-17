@@ -11,6 +11,7 @@ npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-pret
 2. Configurar ESLint
 Crea o actualiza el archivo .eslintrc.json en la raíz de tu proyecto con la siguiente configuración:
 
+```sh
 {
   "root": true,
   "overrides": [
@@ -81,7 +82,7 @@ Crea o actualiza el archivo .eslintrc.json en la raíz de tu proyecto con la sig
     }
   ]
 }
-
+```
 
 3. Configurar Prettier
 Crea un archivo prettier.config.js o .prettierrc o .prettierrc.json en la raíz de tu proyecto con la siguiente configuración:
